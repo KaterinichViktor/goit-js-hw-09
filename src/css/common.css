@@ -17,3 +17,103 @@ img {
   max-width: 100%;
 }
 
+.body-task-1 p,
+.body-task-2 p,
+.body-task-3 p {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  margin: 0;
+}
+.body-task-1,
+.body-task-2,
+.body-task-3{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task-1-buttons{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+ 
+}
+.task-1-buttons button{
+  height: 60px;
+  width: 120px;
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task-1-buttons button:first-child{
+  margin-right: 15px;
+
+}
+
+
+.body-task-2{
+  flex-direction: column;
+}
+.date-selection{
+  display: flex;
+}
+.date-selection input{
+  height: 40px;
+  width: 240px;
+  font-size: 20px;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: center;
+}
+.date-selection button{
+  height: 40px;
+  width: 80px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.timer{
+  display: flex;
+
+}
+.field{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.field:not(:last-child){
+  margin-right: 30px;
+}
+.value{
+  height: 55px;
+  font-size: 45px;
+  margin: 0;
+}
+.label{
+  margin: 0;
+  font-size: 20px;
+}
+
+
+.body-task-3 form{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  font-size: 20px;
+}
+.body-task-3 label{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.body-task-3 label input{
+  height: 30px;
+}
+.body-task-3 form button{
+  font-size: 18px;
+  height: 30px;
+}
