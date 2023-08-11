@@ -10,15 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
     startButton.classList.add('disabled');
   });
 
+  let selectedDate
   const options = {
-      // ... (previous options)
       enableTime: true,
       time_24hr: true,
       defaultDate: new Date(),
       minuteIncrement: 1,
 
         onClose(selectedDates) {
-          const selectedDate = selectedDates[0];
+          selectedDate = selectedDates[0];
           const currentDate = new Date();
   
           if (!selectedDate) {
@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const secondsElement = document.querySelector('[data-seconds]');
   
       startButton.addEventListener('click', () => {
-        const selectedDate = datetimePicker.selectedDates[0];
         const currentDate = new Date();
   
         if (!selectedDate || selectedDate <= currentDate) {
